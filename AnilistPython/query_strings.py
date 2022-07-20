@@ -4,6 +4,7 @@ class QSData:
     '''
     def __init__(self):
         # ANIME =====================================================
+        # ANIME =====================================================
         self.animeInfoQS = """\
             query ($id: Int) {
                 Media(id: $id, type: ANIME) {
@@ -23,6 +24,10 @@ class QSData:
                     }
                     coverImage {
                         large
+                    }
+                    tags {
+                      id
+                      name
                     }
                     bannerImage
                     format
