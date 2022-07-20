@@ -40,6 +40,8 @@ class Anime:
         starting_time = f'{start_month}/{start_day}/{start_year}'
         ending_time = f'{end_month}/{end_day}/{end_year}'
 
+        tags = media_lvl['id']['name']
+
         cover_image = media_lvl['coverImage']['large']
         banner_image = media_lvl['bannerImage']
 
@@ -66,6 +68,7 @@ class Anime:
                     "airing_episodes": airing_episodes,
                     "season": season,
                     "desc": desc,
+                    "tags": tags,
                     "average_score": average_score,
                     "genres": genres,
                     "next_airing_ep": next_airing_ep,}
